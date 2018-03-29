@@ -25,91 +25,135 @@
       <legend>Personal details</legend>
 
       <div>
-        Full name
-        Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.
+        <label for="name">Full name</label>
+        <input id="name" name="name" required>
+        <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
       </div>
 
       <div>
-        What should we call you?
+        <label for="nick">What should we call you?</label>
+        <input id="nick" name="nick" required>
         What all your friends call you, e.g. “Liz”.
       </div>
 
       <div>
-        Date of birth
+        <label for="date">Date of birth</label>
+        <input id="date" type="date" placeholder="yyyy-mm-dd" name="date" required>
       </div>
 
       <div>
-        T-shirt size
-        - Select a t-shirt size
-        - Fitted: XS
-        - Fitted: S
-        - Fitted: M
-        - Fitted: L
-        - Fitted: XL
-        - Straight-cut: XS
-        - Straight-cut: S
-        - Straight-cut: M
-        - Straight-cut: L
-        - Straight-cut: XL
+        <label for="shirt">T-shirt size</label>
+        <select id="shirt" placeholder="Select a t-shirt size" name="shirt">
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
       </div>
 
       <div>
-      Email
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
       </div>
 
       <div>
-      Phone number (optional)
+        <label for="phone">Phone number (optional)</label>
+        <input id="phone" type="phone" name="phone" required>
+      </div>
+
+        <legend>Address</legend>
+        <div>
+
+        <div>
+          <label for="street">Street address</label>
+          <input id="street" type="street" name="street" required>
+        </div>
+
+        <div>
+          <label for="city">City</label>
+          <input id="city" type="city" name="city" required>
+        </div>
+
+        <div>
+          <label for="post">Postal code</label>
+          <input id="post" type="post" name="post" required>
+        </div>
+
+        <div>
+          <label for="province">Province</label>
+          <select id="province" type="province" placeholder="Select a province" name="province">
+
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </div>
       </div>
 
       <div>
-      Address
-      Street address
-      City
-      Postal code
+        <legend>What activities are you interested in helping with?</legend>
+        <div>
+          <input id="dig" type="checkbox" name="act">
+          <label for="dig">Digging holes</label>
+        </div>
+        <div>
+          <input id="dirt" type="checkbox" name="act">
+          <label for="dirt">Getting dirty</label>
+        </div>
+        <div>
+          <input id="heavy" type="checkbox" name="act">
+          <label for="heavy">Lifting heavy objects</label>
+        </div>
+        <div>
+          <input id="drive" type="checkbox" name="act">
+          <label for="drive">Driving people</label>
+        </div>
+        <div>
+          <input id="trans" type="checkbox" name="act">
+          <label for="trans">Transporting trees</label>
+        </div>
+        <div>
+          <input id="photo" type="checkbox" name="act">
+          <label for="photo">Taking photos</label>
+        </div>
+        <div>
+          <input id="pub" type="checkbox" name="act">
+          <label for="pub">Online publishing</label>
+        </div>
+        <div>
+          <input id="man" type="checkbox" name="act">
+          <label for="man">Managing people</label>
+        </div>
       </div>
 
       <div>
-      Province
-        - Select a province
-        - Alberta
-        - British Columbia
-        - Manitoba
-        - New Brunswick
-        - Newfoundland & Labrador
-        - Northwest Territories
-        - Nova Scotia
-        - Nunavut
-        - Ontario
-        - Prince Edward Island
-        - Québec
-        - Saskatchewan
-        - Yukon
-      </div>
-
-      <div>
-        What activities are you interested in helping with?
-        - Digging holes
-        - Getting dirty
-        - Lifting heavy objects
-        - Driving people
-        - Transporting trees
-        - Taking photos
-        - Online publishing
-        - Managing people
-      </div>
-
-      <div>
-        Do you have any experience with the following?
-        - Shovels
-        - Hand-held GPS
-        - Writing & blogging
-        - Photography
-        - Trail & hill climbing
-        - Bush craft
-        - ATVs
-        - Plant identification
-        - Special event planning
-        - Speaking to groups
+        <legend>Do you have any experience with the following?</legend>
+        <select id="act" type="select" name="act">
+        <option>Shovels</option>
+        <option>Hand-held GPS</option>
+        <option>Writing & blogging</option>
+        <option>Photography</option>
+        <option>Trail & hill climbing</option>
+        <option>Bush craft</option>
+        <option>ATVs</option>
+        <option>Plant identification</option>
+        <option>Special event planning</option>
+        <option>Speaking to groups</option>
       </div>
 
       <div>
